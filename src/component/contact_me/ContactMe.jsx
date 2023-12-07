@@ -1,103 +1,84 @@
 import React from 'react'
+import style from "./ContactMe.module.css";
 
 export default function ContactMe() {
     return (
         <>
-            <section className="container contact" id="contact">
-                <div className="contact-container">
-                    <div className="main-title">
-                        <h2>Contact <span>Me</span><span className="bg-text">Contact</span></h2>
+
+            <section className={style.body_home + " d-flex justify-content-center align-items-center"} id="contact">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="position-relative text-uppercase fs-1 fw-bolder">Contact <span className="fw-bolder text-info">Me</span></h2>
                     </div>
-                    <div className="contact-content-con">
-                        <div className="left-contact">
-                            <h4>Contact me here</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                    <div className="d-flex pt-4 justify-content-center align-items-center">
+                        <div className="row justify-content-center align-items-center">
+                            <p className="lh-lg my-3 fs-2 text-light fw-bolder">
+                                These are my accounts to contact me.
+                                I am very happy for you to contact me.
                             </p>
-                            <div className="contact-info">
-                                <div className="contact-item">
-                                    <div className="icon">
-                                        <i className="fas fa-map-marker-alt" />
-                                        <span>Location</span>
+                            <div className={style.fontfamily + " fw-medium col-8"}>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <div className={style.icon}>
+                                        <i className="fas fa-map-marker-alt d-flex align-items-center m-auto  " />
+                                        <span>Location:</span>
                                     </div>
-                                    <p>
-                                        : London, united Kingdom
+                                    <p className="ms-auto my-1">
+                                    Tulkarem, Palestine.
                                     </p>
                                 </div>
-                                <div className="contact-item">
-                                    <div className="icon">
-                                        <i className="fas fa-envelope" />
-                                        <span>Email</span>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <div className={style.icon}>
+                                        <i className="fas fa-envelope d-flex align-items-center  m-auto" />
+                                        <span>Email:</span>
                                     </div>
-                                    <p>
-                                        <span>: maclinzuniversal@gmail.com</span>
+                                    <p className="ms-auto my-2">
+                                        <span>abualnasser198@gmail.com</span>
                                     </p>
                                 </div>
-                                <div className="contact-item">
-                                    <div className="icon">
-                                        <i className="fas fa-user-graduate" />
-                                        <span>Education</span>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <div className={style.icon}>
+                                        <i className="fas fa-user-graduate d-flex align-items-center  m-auto" />
+                                        <span>Education:</span>
                                     </div>
-                                    <p>
-                                        <span>: Sussex University, East Sussex</span>
+                                    <p className="ms-auto my-2">
+                                        <span>Computer Science, An-Najah National University</span>
                                     </p>
                                 </div>
-                                <div className="contact-item">
-                                    <div className="icon">
-                                        <i className="fas fa-user-graduate" />
-                                        <span>Mobile Number</span>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <div className={style.icon}>
+                                        <i className="fas fa-user-graduate d-flex align-items-center m-auto" />
+                                        <span>Mobile Number:</span>
                                     </div>
-                                    <p>
-                                        <span>: 07522670617</span>
+                                    <p className="ms-auto  my-2">
+                                        <span>+972 56-889-1980</span>
                                     </p>
                                 </div>
-                                <div className="contact-item">
-                                    <div className="icon">
-                                        <i className="fas fa-globe-africa" />
-                                        <span>Languages</span>
+                                <div className="d-flex justify-content-start align-items-center">
+                                    <div className={style.icon}>
+                                        <i className="fas fa-globe-africa d-flex align-items-center m-auto" />
+                                        <span>Languages:</span>
                                     </div>
-                                    <p>
-                                        <span>: Afrikaans, English, Spanish</span>
+                                    <p className="my-2 ms-auto">
+                                        <span >Arabic, English.</span>
                                     </p>
                                 </div>
                             </div>
-                            <div className="contact-icons">
-                                <div className="contact-icon">
-                                    <a href="www.facebook.com" target="_blank">
-                                        <i className="fab fa-facebook-f" />
+                            <div className="col-3">
+                                <div className={style.right_contact}>
+                                    <a href="https://www.facebook.com/profile.php?id=100072765333166" target="_blank" className={style.a_style}>
+                                        <i className={style.i_style + " fab fa-facebook-f text-white  fs-4"} />
                                     </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-twitter" />
+                                    <a href="https://www.linkedin.com/in/mohammad-nasser-012009256/" target="_blank" className={style.a_style}>
+                                        <i className={style.i_style + " fab  fa-linkedin text-white  fs-4"} />
                                     </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-github" />
+                                    <a href="https://github.com/MohammadNasser-CS?tab=repositories" target="_blank" className={style.a_style}>
+                                        <i className={style.i_style + " fab fa-github text-white  fs-4"} />
                                     </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-youtube" />
+                                    <a href="https://www.instagram.com/mohammad_nasser.02/" target="_blank" className={style.a_style}>
+                                        <i className={style.i_style + " fab fa-instagram text-white  fs-4"} />
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="right-contact">
-                            <form action className="contact-form">
-                                <div className="input-control i-c-2">
-                                    <input type="text" required placeholder="YOUR NAME" />
-                                    <input type="email" required placeholder="YOUR EMAIL" />
-                                </div>
-                                <div className="input-control">
-                                    <input type="text" required placeholder="ENTER SUBJECT" />
-                                </div>
-                                <div className="input-control">
-                                    <textarea name id cols={15} rows={8} placeholder="Message Here..." defaultValue={""} />
-                                </div>
-                                <div className="submit-btn">
-                                    <a href="#" className="main-btn">
-                                        <span className="btn-text">Download CV</span>
-                                        <span className="btn-icon"><i className="fas fa-download" /></span>
-                                    </a>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>

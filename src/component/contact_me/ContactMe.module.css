@@ -1,0 +1,49 @@
+.body_home {
+    background-color: #447156;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    transition: all 0.4s ease-in-out;
+    height: 100vh;
+}
+.fontfamily {
+    font-family: 'Alkatra', cursive;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255) !important;
+}
+.icon {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    
+}
+.left_contact {
+    flex: 1;
+  }
+.a_style {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #2a2e35;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.a_style:hover {
+    background-color:  rgb(255, 255, 255);
+  }
+.a_style:hover .i_style{
+color:   #1b221f !important;
+}
+
+.right_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
