@@ -5,37 +5,100 @@
     font-size: 1.3rem;
     color: rgb(37, 48, 71) !important;
 }
-.imgbg{
-    background-color: rgb(37, 48, 71) !important;;
+
+.imgbg {
+    background-color: rgb(37, 48, 71) !important;
+    ;
 }
+
 .span_css {
-    color: rgb(127, 6, 248);
+    color: rgb(127, 6, 248) !important;
 }
 
 .body_home {
-    background-color: #447156;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    color: var(--color-white);
-    transition: all 0.4s ease-in-out;
-    height: 100vh;
+    background-color: #447156 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1.1rem !important;
+    transition: all 0.4s ease-in-out !important;
+    height: 100vh !important;
 }
 
-
-
-@media screen and (max-width:991px) {
-    .chngewrap {
-        flex-wrap: wrap !important;
-        gap: 50px;
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    overflow:auto !important;
+}
+.left_header_image{
+    margin-left: 3rem;
+    width:25%;
+    height: 75%;
+}
+/* ml-4 w-25 h-75 */
+@media screen and (max-width: 970px) {
+    .header_content {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding-bottom: 6rem !important;
+        display: grid !important;
+    }
+    .left_header_image {
+        width: 90% !important;
+        margin: 0 auto !important;
     }
 
-    .widthchange {
+    .right_header {
+        grid-row: 1;
+        padding-right: 0rem !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .right_header_name {
+        font-size: 2.5rem !important;
+        text-align: center !important;
+        padding-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .right_header {
+        padding-right: 9rem !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header_content {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding-bottom: 6rem !important;
+        display: grid !important;
+    }
+
+    .right_header {
+        grid-row: 1 !important;
+        padding-right: 0rem !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .right_header_name {
+        font-size: 2.5rem !important;
+        text-align: center !important;
+        padding-top: 3rem !important;
+    }
+
+    .left_header_image {
+        margin: 0 auto !important;
         width: 90% !important;
     }
 }
 
-@media screen and (max-width:767px) {
-    .capfontfamily {
-        font-size: 0.8rem;
+@media screen and (max-width: 700px) {
+    .header_content {
+        grid-template-columns: repeat(1, 1fr) !important;
+        display: grid !important;
+        padding-bottom: 6rem !important;
     }
 }

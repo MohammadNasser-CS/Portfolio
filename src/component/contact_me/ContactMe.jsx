@@ -6,18 +6,18 @@ export default function ContactMe() {
         <>
 
             <section className={style.body_home + " d-flex justify-content-center align-items-center"} id="contact">
-                <div className="container">
+                <div className="container h-100">
                     <div className="text-center">
                         <h2 className="position-relative text-uppercase fs-1 fw-bolder">Contact <span className="fw-bolder text-info">Me</span></h2>
                     </div>
-                    <div className="d-flex pt-4 justify-content-center align-items-center">
+                    <div className={style.contact_content_con+" d-flex pt-4 justify-content-center align-items-center"}>
                         <div className="row justify-content-center align-items-center">
                             <p className="lh-lg my-3 fs-2 text-light fw-bolder">
                                 These are my accounts to contact me.
                                 I am very happy for you to contact me.
                             </p>
                             <div className={style.fontfamily + " fw-medium col-8"}>
-                                <div className="d-flex justify-content-start align-items-center">
+                                <div className={style.contact_item+" d-flex justify-content-start align-items-center"}>
                                     <div className={style.icon}>
                                         <i className="fas fa-map-marker-alt d-flex align-items-center m-auto  " />
                                         <span>Location:</span>
@@ -26,7 +26,7 @@ export default function ContactMe() {
                                     Tulkarem, Palestine.
                                     </p>
                                 </div>
-                                <div className="d-flex justify-content-start align-items-center">
+                                <div className={style.contact_item+" d-flex justify-content-start align-items-center"}>
                                     <div className={style.icon}>
                                         <i className="fas fa-envelope d-flex align-items-center  m-auto" />
                                         <span>Email:</span>
@@ -35,7 +35,7 @@ export default function ContactMe() {
                                         <span>abualnasser198@gmail.com</span>
                                     </p>
                                 </div>
-                                <div className="d-flex justify-content-start align-items-center">
+                                <div className={style.contact_item+" d-flex justify-content-start align-items-center"}>
                                     <div className={style.icon}>
                                         <i className="fas fa-user-graduate d-flex align-items-center  m-auto" />
                                         <span>Education:</span>
@@ -44,7 +44,7 @@ export default function ContactMe() {
                                         <span>Computer Science, An-Najah National University</span>
                                     </p>
                                 </div>
-                                <div className="d-flex justify-content-start align-items-center">
+                                <div className={style.contact_item+" d-flex justify-content-start align-items-center"}>
                                     <div className={style.icon}>
                                         <i className="fas fa-user-graduate d-flex align-items-center m-auto" />
                                         <span>Mobile Number:</span>
@@ -53,7 +53,7 @@ export default function ContactMe() {
                                         <span>+972 56-889-1980</span>
                                     </p>
                                 </div>
-                                <div className="d-flex justify-content-start align-items-center">
+                                <div className={style.contact_item+"d-flex justify-content-start align-items-center"}>
                                     <div className={style.icon}>
                                         <i className="fas fa-globe-africa d-flex align-items-center m-auto" />
                                         <span>Languages:</span>
@@ -63,7 +63,7 @@ export default function ContactMe() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-3">
+                            <div>
                                 <div className={style.right_contact}>
                                     <a href="https://www.facebook.com/profile.php?id=100072765333166" target="_blank" className={style.a_style}>
                                         <i className={style.i_style + " fab fa-facebook-f text-white  fs-4"} />

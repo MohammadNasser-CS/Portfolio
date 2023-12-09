@@ -192,12 +192,15 @@
     transition: all 0.4s ease-in-out;
     width: 80%;
 }
+
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     padding-bottom: 3rem;
+    padding: 3rem;
 }
+
 .tl_icon {
     position: absolute;
     left: -27px;
@@ -209,6 +212,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .tl_duration {
     padding: 0.2rem 0.6rem;
     background-color: #9ec1af;
@@ -218,4 +222,44 @@
     text-transform: uppercase;
     font-weight: 500;
     text-align: start;
+}
+
+@media screen and (max-width: 600px) {
+    .about_container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .right_about {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 2.5rem;
+    }
+
+    .timeline {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    .progress_bars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .right_about {
+        padding-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .progress_bars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .timeline {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .right_about {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
