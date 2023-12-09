@@ -49,9 +49,10 @@
 
 .right_contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 3fr);
+    grid-gap: 1.5rem;
     padding: 1rem;
 }
 
