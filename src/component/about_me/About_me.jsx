@@ -87,7 +87,7 @@ export default function AboutMe() {
                                 </div>
                             </div>
                             <div className="d-flex flex-column justify-content-start w-75">
-                                <p className="text-uppercase fw-bold text-white me-auto">css3</p>
+                                <p className="text-uppercase fw-bold text-white me-auto">css</p>
                                 <div className="d-flex align-items-center justify-content-start">
                                     <p className="text-white-50 fw-medium m-auto">90%</p>
                                     <div className="progress position-relative ms-1 h-25 w-70 bg-white col-12">
