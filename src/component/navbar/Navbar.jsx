@@ -20,7 +20,7 @@ export default function Navbar() {
                                         <Link className="nav-link border rounded me-3 text-white" to="/about">About Me</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link border rounded  me-3 text-white" to="/report">My Portfolio</Link>
+                                        <Link className="nav-link border rounded  me-3 text-white" to="/my_portfolio">My Portfolio</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link border rounded me-3 text-white" to="/contact">Contact Me</Link>
