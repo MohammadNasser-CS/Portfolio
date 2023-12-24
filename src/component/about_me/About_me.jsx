@@ -23,13 +23,13 @@ export default function AboutMe() {
                         <div className={style.right_about}>
                             <div className={style.about_item}>
                                 <div className="d-flex flex-column p-5">
-                                    <p className="fs-1 fw-bolder text-info">2</p>
+                                    <p className="fs-1 fw-bolder text-info">3</p>
                                     <p className=" text-uppercase fs-4">Projects <br /> Completed</p>
                                 </div>
                             </div>
                             <div className={style.about_item}>
                                 <div className="d-flex flex-column p-5">
-                                    <p className="fs-1 fw-bolder text-info">3+</p>
+                                    <p className="fs-1 fw-bolder text-info">1</p>
                                     <p className=" text-uppercase fs-4">Years of <br /> experience</p>
                                 </div>
                             </div>
