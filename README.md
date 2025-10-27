@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full-Stack Developer Portfolio
+
+A modern, responsive portfolio website built with Next.js 16, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern, dark-themed design with smooth animations
+- 📱 Fully responsive across all devices
+- ⚡ Built with Next.js 16 for optimal performance
+- 🎯 Easy to customize and update
+- 📊 Sections for projects, experience, skills, and contact
+- 🔗 Social media integration
+- 📝 Contact form with validation
+
+## Tech Stack
+
+- **Framework:** Next.js 16
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Deployment:** Vercel (recommended)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository or download the ZIP file
+2. Install dependencies:
+
+\`\`\`bash
+npm install
+# or
+yarn install
+\`\`\`
+
+3. Run the development server:
+
+\`\`\`bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization Guide
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Update Personal Information
 
-## Learn More
+Edit `lib/portfolio-data.ts` to update your personal information, projects, experience, and skills.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Update Images
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Replace the placeholder images in the `public` folder with your own project screenshots.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Update Social Links
 
-## Deploy on Vercel
+Update social media links in:
+- `components/hero-section.tsx`
+- `components/contact-section.tsx`
+- `components/footer.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. Customize Colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The color scheme is defined in `app/globals.css`. Modify the CSS variables to change the theme.
+
+### 5. Add Your Resume
+
+Place your resume PDF in the `public` folder as `resume.pdf` or update the link in the navigation.
+
+## Project Structure
+
+\`\`\`
+├── app/
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── navigation.tsx      # Navigation bar
+│   ├── hero-section.tsx    # Hero/About section
+│   ├── projects-section.tsx # Projects showcase
+│   ├── experience-section.tsx # Experience timeline
+│   ├── skills-section.tsx  # Skills & tech stack
+│   ├── contact-section.tsx # Contact form
+│   └── footer.tsx          # Footer
+├── lib/
+│   └── portfolio-data.ts   # Centralized data file
+└── public/
+    └── *.png               # Project images
+\`\`\`
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy
+
+### Deploy to Other Platforms
+
+Build the project:
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+The output will be in the `.next` folder, ready for deployment.
+
+## Adding a Backend (Optional)
+
+To make the contact form functional, you can:
+
+1. **Use a form service:** Formspree, Getform, or Web3Forms
+2. **Add API routes:** Create API routes in `app/api/contact/route.ts`
+3. **Use Firebase:** Integrate Firebase for form submissions and data storage
+4. **Use Supabase:** Add Supabase for database and authentication
+
+### Example: Firebase Integration
+
+1. Install Firebase:
+\`\`\`bash
+npm install firebase
+\`\`\`
+
+2. Create `lib/firebase.ts`:
+\`\`\`typescript
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+
+const firebaseConfig = {
+  // Your Firebase config
+}
+
+const app = initializeApp(firebaseConfig)
+export const db = getFirestore(app)
+\`\`\`
+
+3. Update the contact form to save to Firebase
+
+## Future Enhancements
+
+- [ ] Add blog section
+- [ ] Add testimonials
+- [ ] Add dark/light mode toggle
+- [ ] Add animations with Framer Motion
+- [ ] Add CMS integration (Sanity, Contentful)
+- [ ] Add analytics (Google Analytics, Vercel Analytics)
+- [ ] Add SEO optimization
+- [ ] Add multilingual support
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Support
+
+If you need help customizing your portfolio, feel free to reach out or open an issue.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
+\`\`\`
