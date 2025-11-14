@@ -206,20 +206,20 @@ export default async function SkillsSection() {
               Years Experience
             </div>
           </div>
-          {/* <div className="border border-border bg-card rounded-lg shadow-sm text-center p-6">
+          <div className="border border-border bg-card rounded-lg shadow-sm text-center p-6">
             <div className="text-3xl font-bold text-primary mb-2">
               {stats.technologies}
             </div>
             <div className="text-sm text-muted-foreground">Technologies</div>
-          </div> */}
-          <div className="border border-border bg-card rounded-lg shadow-sm text-center p-6">
+          </div>
+          {/* <div className="border border-border bg-card rounded-lg shadow-sm text-center p-6">
             <div className="text-3xl font-bold text-primary mb-2">
-              {stats.clientSatisfaction}
+              {stats.clientSatisfaction}%
             </div>
             <div className="text-sm text-muted-foreground">
               Client Satisfaction
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
